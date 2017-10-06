@@ -2,13 +2,30 @@
 GENERAL
 *****************************************/
 
+.main-heading {
+	text-align: center;
+}
 
+.nav-section {
+	background-image: url("../assets/images/patternDarkGray.jpg");
+}
 
 /*****************************************
 NAV
 *****************************************/
 
+.main-logo {
+	padding-top: 10px;
+}
 
+nav {
+	max-height: 5vh;
+}
+
+.navbar-default {
+	border: none;
+	border-radius: 0px;
+}
 
 /*****************************************
 FOOTER
@@ -37,6 +54,8 @@ FONTS & COLORS
 	--charcoal-grey: #404041;
 	--light-gray: #eeefef;
 	--silver: #d3d4d6;
+	font-family: 'Open Sans', sans-serif;
+	font-family: Trash-Hands;
 }*/
 
 .navbar-default {
@@ -44,19 +63,23 @@ FONTS & COLORS
 }
 
 .search-icon {
-	width: 26px;
-	height: 26px;
+	display: inline-block;
 	background-color: #c53a94;
 	border-radius: 50%;
-	background-size: 100px px;
+	padding: 5px;
 }
 
 .cart-icon {
-	width: 26px;
-	height: 26px;
+	display: inline-block;
 	background-color: #00abd4;
 	border-radius: 50%;
-	background-size: 100px px;
+	padding: 5px;
+	overflow: visible;
+}
+
+body {
+	background-color: black;
+	color: #d3d4d6;
 }
 
 /*****************************************
