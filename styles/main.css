@@ -8,8 +8,13 @@ GENERAL
 
 .nav-section {
 	background-image: url("../assets/images/patternDarkGray.jpg");
+	font-size: 2rem;
+	padding: 6px 5px;
 }
 
+.nav-section div {
+	margin: 15px 0px;
+}
 /*****************************************
 NAV
 *****************************************/
@@ -58,6 +63,27 @@ FONTS & COLORS
 	font-family: Trash-Hands;
 }*/
 
+@font-face {
+    font-family: 'trashhandregular';
+    src: url('TrashHand-webfont.eot');
+    src: url('TrashHand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('TrashHand-webfont.woff2') format('woff2'),
+         url('TrashHand-webfont.woff') format('woff'),
+         url('TrashHand-webfont.ttf') format('truetype'),
+         url('TrashHand-webfont.svg#trashhandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: 'Open Sans';
+}
+
+.trash-hands {
+	font-family: 'trashhandregular';
+}
+
 .navbar-default {
 	background-color: #4c4c4e;
 }
@@ -77,9 +103,26 @@ FONTS & COLORS
 	overflow: visible;
 }
 
+.street-event {
+	background-color: #00abd4;
+}
+
+.order-now {
+	background-color: #f36321;
+}
+
+.our-menu {
+	background-color: #c53a94;
+}
+
 body {
 	background-color: black;
 	color: #d3d4d6;
+}
+
+footer {
+	background-color: #404041;
+	color: #eeefef;
 }
 
 /*****************************************
