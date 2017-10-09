@@ -8,18 +8,25 @@ GENERAL
 
 .nav-section {
 	background-image: url("../assets/images/patternDarkGray.jpg");
+	background-size: 50% auto;
 	font-size: 2rem;
 	padding: 6px 5px;
 }
 
-.nav-section div {
-	margin: 15px 0px;
+.nav-section span {
+	
 }
+
+.menu-menu {
+	padding: 5px;
+	margin: 12px 0px;
+}
+
 /*****************************************
 NAV
 *****************************************/
 
-.main-logo {
+img.main-logo {
 	padding-top: 10px;
 }
 
@@ -30,6 +37,7 @@ nav {
 .navbar-default {
 	border: none;
 	border-radius: 0px;
+	text-align: center;
 }
 
 /*****************************************
@@ -64,65 +72,90 @@ FONTS & COLORS
 }*/
 
 @font-face {
-    font-family: 'trashhandregular';
-    src: url('TrashHand-webfont.eot');
-    src: url('TrashHand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('TrashHand-webfont.woff2') format('woff2'),
-         url('TrashHand-webfont.woff') format('woff'),
-         url('TrashHand-webfont.ttf') format('truetype'),
-         url('TrashHand-webfont.svg#trashhandregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'TrashHand';
+  src: url('TrashHand-webfont.eot');
+  src: url('TrashHand-webfont.eot?#iefix') format('embedded-opentype'),
+       url('TrashHand-webfont.woff2') format('woff2'),
+       url('TrashHand-webfont.woff') format('woff'),
+       url('TrashHand-webfont.ttf') format('truetype'),
+       url('TrashHand-webfont.svg#trashhandregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
-h1, h2, h3, h4, h5, h6, p, a {
-	font-family: 'Open Sans';
-}
-
 .trash-hands {
-	font-family: 'trashhandregular';
+	font-family: 'TrashHand';
+	font-size: 4.5rem;
 }
 
-.navbar-default {
-	background-color: #4c4c4e;
+.street-event, .order-now, .our-menu {
+	font-family: 'Open Sans';
+	color: #d3d4d6; /*silver*/ 
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #404041; /*charcoal-grey*/
+}
+
+p {
+	color: #4c4c4e; /*heather-gray:*/
+}
+
+.navbar-default, footer {
+	background-color: #312f30; /*purplish-brown:*/ 
 }
 
 .search-icon {
 	display: inline-block;
-	background-color: #c53a94;
+	background-color: #c53a94; /*purple*/ 
 	border-radius: 50%;
 	padding: 5px;
 }
 
 .cart-icon {
 	display: inline-block;
-	background-color: #00abd4;
+	background-color: #00abd4; /*blue*/
 	border-radius: 50%;
 	padding: 5px;
 	overflow: visible;
 }
 
 .street-event {
-	background-color: #00abd4;
+	background-color: #00abd4; /*blue*/
 }
 
 .order-now {
-	background-color: #f36321;
+	background-color: #f36321; /*orange*/
 }
 
 .our-menu {
-	background-color: #c53a94;
+	background-color: #c53a94; /*purple*/ 
 }
 
-body {
-	background-color: black;
-	color: #d3d4d6;
+.the-med>a {
+	color: #ee145c; /*hotpink*/
+}
+
+.the-uk>a {
+	color: #00abd4; /*blue*/
+}
+
+.the-south>a {
+	color: #f36321; /*orange*/
+}
+
+.the-east>a {
+	color: #8cc540; /*green*/
+}
+
+.the-car>a {
+	color: #c53a94; /*purple*/ 
 }
 
 footer {
-	background-color: #404041;
-	color: #eeefef;
+	height: 20vh;
+	color: #eeefef; /*light-gray*/
+	/*background-color: black;*/
 }
 
 /*****************************************
