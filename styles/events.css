@@ -8,6 +8,17 @@ GENERAL
 	padding-bottom: 10px;
 }
 
+button.social {
+	padding: 10px 12px;
+	font-size: .6em;
+	margin: 6px;
+	width: 75px;
+	
+	float: right;
+	display: inline-block;
+	
+}
+
 /*****************************************
 FONTS & COLOUR
 *****************************************/
@@ -23,8 +34,11 @@ article.event {
 }
 
 div.event{
-	border-bottom-color: #C6C7C7; /*light-gray*/
-	border-style: solid;
+	/*border-right-color: white;
+	border-left-color: white;
+	border-top-color: white;*/
+	/*border-bottom-color: #C6C7C7;*/ /*light-gray*/
+	/*border-style: solid;*/
 	border-width: 2px; 
 }
 
@@ -35,5 +49,45 @@ div.event{
 
 
 /*****************************************
-
+COLORS
 *****************************************/
+
+/*{ 
+	--green: #8cc540;
+	--orange: #f36321;
+	--blue: #00abd4;
+	--hotpink: #ee145c;
+	--purple: #c53a94;
+	--purplish-brown: #312f30;
+	--heather-gray: #4c4c4e;
+	--charcoal-grey: #404041;
+	--light-gray: #eeefef;
+	--silver: #d3d4d6;
+	font-family: 'Open Sans', sans-serif;
+	font-family: Trash-Hands;
+}*/
+
+.feed-heading {
+	background-color: #00abd4; /*blue*/ 
+	border-color: #00abd4;
+	border-style: solid;
+	box-shadow: -6px 6px 1px #00abd4;
+}
+
+.map-it {
+	background-color: #f36321;
+	color: #d3d4d6;
+	border: none;
+}
+
+.share-it {
+	background-color: #404041;
+	color: #d3d4d6;
+	border: none;
+}
+
+.follow {
+	background-color: #00abd4;
+	color: #d3d4d6;
+	border: none;
+}
