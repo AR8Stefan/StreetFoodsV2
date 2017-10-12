@@ -2,6 +2,10 @@
 GENERAL
 *****************************************/
 
+.panel {
+	border-radius: 0px;
+}
+
 .event-list {
 	background-image: url("../assets/images/patternGray.jpg");
 	background-size: 75% auto;
@@ -14,9 +18,13 @@ button.social {
 	margin: 6px;
 	width: 75px;
 	
-	float: right;
+	/*float: right;*/
 	display: inline-block;
 	
+}
+
+.title {
+	text-transform: uppercase;
 }
 
 /*****************************************
@@ -67,6 +75,15 @@ COLORS
 	font-family: Trash-Hands;
 }*/
 
+div.event-date>h2 p {
+	background-color: #f36321;
+	color: #d3d4d6;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+}
+
 .feed-heading {
 	background-color: #00abd4; /*blue*/ 
 	border-color: #00abd4;
@@ -78,16 +95,20 @@ COLORS
 	background-color: #f36321;
 	color: #d3d4d6;
 	border: none;
+	float: right;
 }
 
 .share-it {
 	background-color: #404041;
 	color: #d3d4d6;
 	border: none;
+	float: right;
 }
 
 .follow {
 	background-color: #00abd4;
 	color: #d3d4d6;
 	border: none;
+	float: right;
 }
+
