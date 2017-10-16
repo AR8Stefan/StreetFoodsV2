@@ -4,12 +4,33 @@ GENERAL
 
 .panel {
 	border-radius: 0px;
+	border-width: 2px;
+	border-color: lightgray; /*#eeefef;*/
+	/*box-shadow: -5px 5px 0px lightgray*/
+}
+
+.panel-body {
+	border-bottom-color: lightgray;
+	border-bottom-width: 2px;
+	padding: 15px 2px;
+}
+
+.share-buttons {
+	float: right;
 }
 
 .event-list {
 	background-image: url("../assets/images/patternGray.jpg");
 	background-size: 75% auto;
 	padding-bottom: 10px;
+}
+
+div.event-date {
+	text-align: center;
+	line-height: 1;
+	margin: 0px;
+	padding: 0px;
+	width: 130px;
 }
 
 button.social {
@@ -23,8 +44,8 @@ button.social {
 	
 }
 
-.title {
-	text-transform: uppercase;
+button.feed {
+	margin-bottom: 12px;
 }
 
 /*****************************************
@@ -36,9 +57,9 @@ article.event {
 	margin-bottom: 15px;
 	background-color: white;
 	border-color: #C6C7C7; /*light-gray*/
-	border-style: solid;
+
 	border-width: 2px;
-	box-shadow: -6px 6px 1px #C6C7C7; /*light-gray*/
+	/*box-shadow: -6px 6px 1px #C6C7C7;*/ /*light-gray*/
 }
 
 div.event{
@@ -57,7 +78,7 @@ div.event{
 
 
 /*****************************************
-COLORS
+FONTS, COLORS & STYLES/BORDERS
 *****************************************/
 
 /*{ 
@@ -75,40 +96,77 @@ COLORS
 	font-family: Trash-Hands;
 }*/
 
-div.event-date>h2 p {
-	background-color: #f36321;
-	color: #d3d4d6;
-	text-align: center;
-	margin: 0px;
-	padding: 0px;
-	width: auto;
+h2, h3, h4, h5, h6, a {
+	font-family: 'Open Sans';
+	font-weight: bold;
 }
 
-.feed-heading {
-	background-color: #00abd4; /*blue*/ 
+h6 {
+	font-size: 1.3em;
+}
+
+div.event-date {
+	background-color: #f36321;
+}
+
+div.event-date>h2 {
+	color: white;
+	margin-bottom: 0;
+}
+
+div.event-date>p {
+	color: white;
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+}
+
+p:nth-child(1) {
+	color: #f36321;
+	margin-top: 10px;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.panel {
+	@include shade(box, #2b3c4e, 150, 156deg, true);
+	box-shadow: -6px 6px 0px lightgray;
+}
+
+.panel-default>.panel-heading {
+	background-color: #00abd4; /*blue*/
 	border-color: #00abd4;
-	border-style: solid;
-	box-shadow: -6px 6px 1px #00abd4;
+	border-radius: 0px;
+	border-bottom-width: 0px;
+	/*border-style: solid;*/
+	/*box-shadow: -6px 6px 1px #00abd4;*/
+}
+
+.panel-default>.panel-heading>h2 {
+	color: white;
+	text-transform: uppercase; 
 }
 
 .map-it {
 	background-color: #f36321;
-	color: #d3d4d6;
+	color: white;
 	border: none;
-	float: right;
+	/*float: right;*/
 }
 
 .share-it {
 	background-color: #404041;
-	color: #d3d4d6;
+	color: white;
 	border: none;
-	float: right;
+	/*float: right;*/
 }
 
 .follow {
 	background-color: #00abd4;
-	color: #d3d4d6;
+	color: white;
 	border: none;
-	float: right;
+	/*float: right;*/
 }
 
