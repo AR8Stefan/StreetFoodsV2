@@ -2,12 +2,51 @@
 GENERAL
 *****************************************/
 
+/*hr {
+	width: 100%;
+}*/
+
+div.panel-body {
+	border-bottom-color: black;
+	border-width: 5px;
+}
 
 /*****************************************
 
 *****************************************/
 
 
+
+/*****************************************
+
+*****************************************/
+
+.button1 {
+		background-image: url("../assets/images/plus.svg");/* Hotpink */
+		background-repeat: no-repeat;
+    background-color: #ee145c; 
+    border-radius: 50%;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    /*vertical-align: middle;*/
+    text-decoration: none;
+    display: inline-block;*/
+}
+
+.button2 {
+		background-image: url("../assets/images/minus.svg");/* charcoal-gray */
+		background-repeat: no-repeat;
+    background-color: #404041;
+    border-radius: 50%;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+    
+}
 
 /*****************************************
 FONTS, COLORS & STYLES/BORDERS
