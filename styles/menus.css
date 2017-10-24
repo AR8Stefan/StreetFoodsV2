@@ -11,6 +11,11 @@ div.panel-body {
 	border-width: 5px;
 }
 
+.glyphicon-menu-right:before {
+	display: inline-block;
+	float: right !important;
+}
+
 /*****************************************
 
 *****************************************/

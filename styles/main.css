@@ -105,7 +105,7 @@ p {
 	color: #4c4c4e; /*heather-gray:*/
 }
 
-.navbar-default, footer {
+.navbar-default, footer, .navbar-form, .navbar-collapse {
 	background-color: #312f30; /*purplish-brown:*/ 
 }
 
