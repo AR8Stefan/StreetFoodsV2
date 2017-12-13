@@ -44,6 +44,14 @@ nav {
 	max-height: 5vh;
 }
 
+div.navbar-header {
+	margin-bottom: -28px;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
 .navbar-default {
 	border: none;
 	border-radius: 0px;
@@ -113,6 +121,11 @@ p {
 
 .navbar-default, footer, .navbar-form, .navbar-collapse {
 	background-color: #312f30; /*purplish-brown:*/ 
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border: none;
+	height: 250px
 }
 
 .search-icon {

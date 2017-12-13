@@ -8,13 +8,13 @@
 		<link rel="stylesheet" href="styles/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-		<script src="//code.jquery.com/jquery.min.js"></script>
+		<!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	</head>
 	<body>
-		<nav class="navbar navbar-default" id="nav-placeholder">
+		<nav class="navbar navbar-default" id="nav-placeholder" style="z-index : 1;">
 		  <div class="container container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -28,7 +28,7 @@
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
 		      <ul class="nav navbar-nav navbar-right">
 	          <li><a href="../index.html">Home</a></li>
 	          <li><a href="pages/events.html">Order</a></li>
@@ -36,15 +36,18 @@
 	          <li><a href="pages/events.html">Events</a></li>
 	          <li><a href="pages/events.html">Contact</a></li>
 		        <div class="navbar-header">
-				      <li><a href=""><img class="search-icon" src="assets/images/search.svg" alt="Search"></a></li>
-				      <li><a href=""><img class="cart-icon" src="assets/images/cart.svg" alt="Checkout"></a></li>
+				      <li><a href=""><img class="search-icon hidden-xs src="assets/images/search.svg" alt="Search"></a></li>
+				      <li><a href=""><img class="cart-icon hidden-xs" src="assets/images/cart.svg" alt="Checkout"></a></li>
 				    </div>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<div id="map"></div>
+		<div>
+			<div id="map"></div>
+		</div>
+
     <script>
       var map;
       function initMap() {
@@ -52,17 +55,39 @@
           center: {lat: 34.052234, lng: -118.243685},
           zoom: 11
         });
+        /***************
+				Markers
+        ***************/ 
+        marker = new google.maps.Marker({
+          position: {lat: 34.062792, lng: -118.239451},
+          map: map
+        });
 
-        // marker = new google.maps.Marker({
-        //   position: uluru,
-        //   map: map
-        // });
+        marker = new google.maps.Marker({
+        	position: {lat: 34.011091, lng: -118.497448},
+        	map: map
+        });
+
+        marker = new google.maps.Marker({
+        	position: {lat: 34.023155, lng: -118.282746},
+        	map: map
+        });
+
+        marker = new google.maps.Marker({
+        	position: {lat: 33.945478, lng: -118.344315},
+        	map: map
+        });
+
+        marker =new google.maps.Marker({
+        	position: {lat: 34.023620, lng: -118.174826},
+        	map: map
+        })
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtIoa_w3_ZFPNfMbxeV-inByD0p8T9A1w&callback=initMap"
     async defer></script>
 
-		<div class="nav-section">
+		<div class="nav-section visible-xs">
 			<a href="pages/events.html"><div class="street-event menu-menu">STREET EVENTS <span class=" glyphicon glyphicon-menu-right"></span></div></a>
 			<a href="pages/menus.html"><div class="order-now menu-menu">ORDER NOW <span class="glyphicon glyphicon-menu-right"></span></div></a>
 			<a href="pages/menus.html"><div class="our-menu menu-menu">OUR MENUS <span class="glyphicon glyphicon-menu-right"></span></div></a>
@@ -80,7 +105,7 @@
 				<div>
 					<h3>THE MEDITERRANEAN</h3>
 					<p>some text for something.some text for something.some text for something.</p>
-					<a href="#">VIEW TRUCK</a>
+					<a href="#" style="color: #ee145c">VIEW TRUCK</a>
 				</div>	
 			</div>
 
@@ -88,52 +113,41 @@
 				<a href="#"><img src="assets/images/truckuk.svg"></a>
 				<h3>THE UNITED KINGDOM</h3>
 				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#">VIEW TRUCK</a>
+				<a href="#" style="color: #00abd4">VIEW TRUCK</a>
 			</div>
 
 			<div class="the-south">
 				<a href="#"><img src="assets/images/trucksouth.svg"></a>
 				<h3>SOUTH OF THE BORDER</h3>
 				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#">VIEW TRUCK</a>
+				<a href="#" style="color: #f36321">VIEW TRUCK</a>
 			</div>
 
 			<div class="the-east">
 				<a href="#"><img src="assets/images/truckeast.svg"></a>
 				<h3>THE FAR EAST</h3>
 				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#">VIEW TRUCK</a>
+				<a href="#" style="color: #8cc540">VIEW TRUCK</a>
 			</div>
 
 			<div class="the-car">
 				<a href="#"><img src="assets/images/truckcar.svg"></a>
 				<h3>THE CARRIBEAN</h3>
 				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#">VIEW TRUCK</a>
+				<a href="#" style="color: #c53a94">VIEW TRUCK</a>
 			</div>
+		</div>
+
+		<div class="nav-section hidden-xs">
+			<a href="pages/events.html"><div class="street-event menu-menu">STREET EVENTS <span class=" glyphicon glyphicon-menu-right"></span></div></a>
+			<a href="pages/menus.html"><div class="order-now menu-menu">ORDER NOW <span class="glyphicon glyphicon-menu-right"></span></div></a>
+			<a href="pages/menus.html"><div class="our-menu menu-menu">OUR MENUS <span class="glyphicon glyphicon-menu-right"></span></div></a>
 		</div>
 
 		<footer>
 			<h4>some text</h4>
 		</footer>
 
-	 <!--  <script>
-      function initMap() {
-        const uluru = {lat: -25.363, lng: 131.044};
-        const map = new google.maps.Map(document.getElementByID('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-		<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtIoa_w3_ZFPNfMbxeV-inByD0p8T9A1w&callback=initMap">
-    </script>
- -->
 	</body>
 </html>
 
