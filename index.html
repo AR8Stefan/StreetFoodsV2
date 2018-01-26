@@ -24,7 +24,12 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      <div>
+		      	<a href=""><img style="" class="mobile-icons visible-xs" src="assets/images/search.svg" alt="Search"></a>
+				   	<a href=""><img class="mobile-icons visible-xs" src="assets/images/cart-mob.svg" alt="Checkout"></a>
+				  </div>
 		      <a href="#"><img class="main-logo" src="assets/images/logo.svg"></a>
+		      
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,10 +40,12 @@
 	          <li><a href="pages/events.html">Menus</a></li>
 	          <li><a href="pages/events.html">Events</a></li>
 	          <li><a href="pages/events.html">Contact</a></li>
-		        <div class="navbar-header">
-				      <li><a href=""><img class="search-icon hidden-xs src="assets/images/search.svg" alt="Search"></a></li>
-				      <li><a href=""><img class="cart-icon hidden-xs" src="assets/images/cart.svg" alt="Checkout"></a></li>
-				    </div>
+		        <div class="navbar-header"> <!-- Start Nav Icons -->
+		        	<div class="icon"> <!-- Start Icons -->
+				      	<li><a href=""><img class="search-icon icons hidden-xs" src="assets/images/search.svg" alt="Search"></a></li>
+				      	<li><a href=""><img class="cart-icon icons hidden-xs" src="assets/images/cart.svg" alt="Checkout"></a></li>
+				      </div> <!-- /icons -->
+				    </div> <!-- /Nav Icons -->
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -49,7 +56,7 @@
 		</div>
 
     <script>
-      var map;
+      let map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 34.052234, lng: -118.243685},
@@ -93,50 +100,50 @@
 			<a href="pages/menus.html"><div class="our-menu menu-menu">OUR MENUS <span class="glyphicon glyphicon-menu-right"></span></div></a>
 		</div>
 
-		<div class="menu-list container">
-			<div class="main-heading">
-				<h1 class="trash-hands">EAT LOCAL, TASTE THE WORLD.</h1>
-			</div>
-
-			<div class="the-med">
-				<div>
-					<a href="#"><img src="assets/images/truckmed.svg"></a>
+		<div class="menu-list container"> <!---- BODY ---->
+			<div class="row">
+				<div class="main-heading">
+					<h1 class="trash-hands">EAT LOCAL, TASTE THE WORLD.</h1>
 				</div>
-				<div>
-					<h3>THE MEDITERRANEAN</h3>
+
+				<div class="the-med col-xs-12">
+					<div>
+						<a href="#"><img class="menu-truck" src="assets/images/truckmed.svg"></a>
+						<h3>THE MEDITERRANEAN</h3>
+						<p>some text for something.some text for something.some text for something.</p>
+						<a href="#" style="color: #ee145c">VIEW TRUCK</a>
+					</div>	
+				</div>
+
+				<div class="the-uk col-xs-12">
+					<a href="#"><img class="menu-truck" src="assets/images/truckuk.svg"></a>
+					<h3>THE UNITED KINGDOM</h3>
 					<p>some text for something.some text for something.some text for something.</p>
-					<a href="#" style="color: #ee145c">VIEW TRUCK</a>
-				</div>	
-			</div>
+					<a href="#" style="color: #00abd4">VIEW TRUCK</a>
+				</div>
 
-			<div class="the-uk">
-				<a href="#"><img src="assets/images/truckuk.svg"></a>
-				<h3>THE UNITED KINGDOM</h3>
-				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#" style="color: #00abd4">VIEW TRUCK</a>
-			</div>
+				<div class="the-south col-xs-12">
+					<a href="#"><img class="menu-truck" src="assets/images/trucksouth.svg"></a>
+					<h3>SOUTH OF THE BORDER</h3>
+					<p>some text for something.some text for something.some text for something.</p>
+					<a href="#" style="color: #f36321">VIEW TRUCK</a>
+				</div>
 
-			<div class="the-south">
-				<a href="#"><img src="assets/images/trucksouth.svg"></a>
-				<h3>SOUTH OF THE BORDER</h3>
-				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#" style="color: #f36321">VIEW TRUCK</a>
-			</div>
+				<div class="the-east col-xs-12">
+					<a href="#"><img class="menu-truck" src="assets/images/truckeast.svg"></a>
+					<h3>THE FAR EAST</h3>
+					<p>some text for something.some text for something.some text for something.</p>
+					<a href="#" style="color: #8cc540">VIEW TRUCK</a>
+				</div>
 
-			<div class="the-east">
-				<a href="#"><img src="assets/images/truckeast.svg"></a>
-				<h3>THE FAR EAST</h3>
-				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#" style="color: #8cc540">VIEW TRUCK</a>
+				<div class="the-car col-xs-12">
+					<a href="#"><img class="menu-truck" src="assets/images/truckcar.svg"></a>
+					<h3>THE CARRIBEAN</h3>
+					<p>some text for something.some text for something.some text for something.</p>
+					<a href="#" style="color: #c53a94">VIEW TRUCK</a>
+				</div>
 			</div>
-
-			<div class="the-car">
-				<a href="#"><img src="assets/images/truckcar.svg"></a>
-				<h3>THE CARRIBEAN</h3>
-				<p>some text for something.some text for something.some text for something.</p>
-				<a href="#" style="color: #c53a94">VIEW TRUCK</a>
-			</div>
-		</div>
+		</div> <!---- /BODY ---->
 
 		<div class="nav-section hidden-xs">
 			<a href="pages/events.html"><div class="street-event menu-menu">STREET EVENTS <span class=" glyphicon glyphicon-menu-right"></span></div></a>

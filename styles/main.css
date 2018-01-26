@@ -1,3 +1,5 @@
+/** { border: 1px solid red !important; }*/
+
 /*****************************************
 GENERAL
 *****************************************/
@@ -13,19 +15,35 @@ GENERAL
 	padding: 6px 5px;
 }
 
-.nav-section span {
-	
+.menu-menu {
+	padding: 10px;
+	margin: 25px 5px;
+	font-weight: bold;
 }
 
-.menu-menu {
-	padding: 5px;
-	margin: 12px 0px;
+.glyphicon {
+	float: right;
+}
+
+.glyphicon-menu-right {
+	font-weight: 100px;
 }
 
 #map {
 	/*min-height: 40vh;*/
 	height: 400px;
   width: 100%;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+}
+
+img.menu-trucks {
+	margin: 10px 0;
+	padding: 110px 0;
 }
 
 footer {
@@ -38,14 +56,26 @@ NAV
 
 img.main-logo {
 	padding-top: 10px;
+	/*align-content: center;
+	outline-offset:*/ 
 }
 
 nav {
 	max-height: 5vh;
 }
 
+img.mobile-icons {
+	
+}
+
 div.navbar-header {
 	margin-bottom: -28px;
+}
+
+button.navbar-toggle {
+	float: left;
+	margin: 7.5px 0 10px 10px;
+	border: none;
 }
 
 .navbar {
@@ -56,6 +86,28 @@ div.navbar-header {
 	border: none;
 	border-radius: 0px;
 	text-align: center;
+}
+
+.icon {
+	position: relative;
+}
+
+.icons {
+	display: inline-block;
+	margin: auto;
+	margin-top: 50%;
+	/*margin-bottom: 50%;*/
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.mobile-icons {
+	float: right;
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+	margin-top: 15px;
+	padding: 5px 10px;
 }
 
 /*****************************************
@@ -107,8 +159,8 @@ FONTS & COLORS
 
 .street-event, .order-now, .our-menu {
 	font-family: 'Open Sans';
-	color: #d3d4d6; /*silver*/ 
-	
+	color: white; /*silver*/ 
+	font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,6 +169,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	color: #4c4c4e; /*heather-gray:*/
+}
+
+/*navbar button lines*/
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
 }
 
 .navbar-default, footer, .navbar-form, .navbar-collapse {
@@ -129,18 +186,12 @@ p {
 }
 
 .search-icon {
-	display: inline-block;
 	background-color: #c53a94; /*purple*/ 
-	border-radius: 50%;
-	padding: 5px;
 }
 
 .cart-icon {
-	display: inline-block;
 	background-color: #00abd4; /*blue*/
-	border-radius: 50%;
-	padding: 5px;
-	overflow: visible;
+	/*overflow: visible;*/
 }
 
 .street-event {
