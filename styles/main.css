@@ -29,6 +29,14 @@ GENERAL
 	font-weight: 100px;
 }
 
+div.menu-select {
+	padding: 3% 10px;
+}
+
+div.col-xs-8 {
+	padding-left: 25px;
+}
+
 #map {
 	/*min-height: 40vh;*/
 	height: 400px;
@@ -44,6 +52,8 @@ img {
 img.menu-trucks {
 	margin: 10px 0;
 	padding: 110px 0;
+	width: 100px;
+	height: 100px;
 }
 
 footer {
@@ -65,7 +75,7 @@ nav {
 }
 
 img.mobile-icons {
-	
+	/*margin: 0 auto;*/
 }
 
 div.navbar-header {
@@ -74,7 +84,8 @@ div.navbar-header {
 
 button.navbar-toggle {
 	float: left;
-	margin: 7.5px 0 10px 10px;
+	margin: 7.5px auto 10px 10px;
+	/*padding-right: 20px;*/
 	border: none;
 }
 
@@ -154,7 +165,7 @@ FONTS & COLORS
 }
 .trash-hands {
 	font-family: 'TrashHand';
-	font-size: 4.5rem;
+	font-size: 5rem;
 }
 
 .street-event, .order-now, .our-menu {

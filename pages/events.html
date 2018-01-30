@@ -15,7 +15,7 @@
 
 	</head>
 	<body>
-		<nav class="navbar navbar-default" id="nav-placeholder">
+		<nav class="navbar navbar-default" id="nav-placeholder" style="z-index : 1;">
 		  <div class="container container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -25,21 +25,28 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		      <div>
+		      	<a href=""><img style="" class="mobile-icons visible-xs" src="../assets/images/search.svg" alt="Search"></a>
+				   	<a href=""><img class="mobile-icons visible-xs" src="../assets/images/cart-mob.svg" alt="Checkout"></a>
+				  </div>
 		      <a href="../index.html"><img class="main-logo" src="../assets/images/logo.svg"></a>
+		      
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
 		      <ul class="nav navbar-nav navbar-right">
 	          <li><a href="../index.html">Home</a></li>
-	          <li><a href="/events.html">Order</a></li>
-	          <li><a href="menus.html">Menus</a></li>
-	          <li><a href="/events.html">Events</a></li>
-	          <li><a href="/events.html">Contact</a></li>
-		        <div class="navbar-header">
-				      <li><a href=""><img class="search-icon" src="../assets/images/search.svg" alt="Search"></a></li>
-				      <li><a href=""><img class="cart-icon" src="../assets/images/cart.svg" alt="Checkout"></a></li>
-				    </div>
+	          <li><a href="pages/events.html">Order</a></li>
+	          <li><a href="pages/events.html">Menus</a></li>
+	          <li><a href="pages/events.html">Events</a></li>
+	          <li><a href="pages/events.html">Contact</a></li>
+		        <div class="navbar-header"> <!-- Start Nav Icons -->
+		        	<div class="icon"> <!-- Start Icons -->
+				      	<li><a href=""><img class="search-icon icons hidden-xs" src="../assets/images/search.svg" alt="Search"></a></li>
+				      	<li><a href=""><img class="cart-icon icons hidden-xs" src="../assets/images/cart.svg" alt="Checkout"></a></li>
+				      </div> <!-- /icons -->
+				    </div> <!-- /Nav Icons -->
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
