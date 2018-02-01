@@ -58,6 +58,7 @@ img.menu-trucks {
 
 footer {
 	padding-top: 10px;
+	display: block;
 }
 
 /*****************************************
@@ -124,8 +125,22 @@ button.navbar-toggle {
 /*****************************************
 FOOTER
 *****************************************/
+.form-control {
+	width: 25%;
+	border-radius: 0;
+	margin: 0;
+}
 
+button.btn-default.sub {
+	/*float: right;*/
+	color: white;
+	vertical-align: top;
+	font-size: 1em;
+}
 
+input{
+	float: left;
+}
 
 /*****************************************
 
@@ -168,7 +183,9 @@ FONTS & COLORS
 	font-size: 5rem;
 }
 
-.street-event, .order-now, .our-menu {
+.street-event,
+.order-now,
+.our-menu {
 	font-family: 'Open Sans';
 	color: white; /*silver*/ 
 	font-weight: bold;
@@ -187,8 +204,15 @@ p {
 	background-color: white;
 }
 
-.navbar-default, footer, .navbar-form, .navbar-collapse {
+footer,
+.navbar-default,
+.navbar-form,
+.navbar-collapse {
 	background-color: #312f30; /*purplish-brown:*/ 
+}
+
+footer {
+	color: #eeefef; /*light-gray*/
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -237,11 +261,6 @@ p {
 	color: #c53a94; /*purple*/ 
 }
 
-footer {
-	height: 20vh;
-	color: #eeefef; /*light-gray*/
-	/*background-color: black;*/
-}
 
 /*****************************************
 

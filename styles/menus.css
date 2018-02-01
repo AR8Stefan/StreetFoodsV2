@@ -26,7 +26,7 @@ div.panel-body {
 
 *****************************************/
 
-.button1 {
+.plus-btn {
 		background-image: url("../assets/images/plus.svg");/* Hotpink */
 		background-repeat: no-repeat;
     background-color: #ee145c; 
@@ -39,7 +39,7 @@ div.panel-body {
     display: inline-block;*/
 }
 
-.button2 {
+.minus-btn {
 		background-image: url("../assets/images/minus.svg");/* charcoal-gray */
 		background-repeat: no-repeat;
     background-color: #404041;
