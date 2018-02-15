@@ -10,7 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 		<!---- SCRIPTS ----> 
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  <!----- Add page functions to bottom of file ---->
 
@@ -60,17 +60,23 @@
 					<h2 class="menu-title">The Mediteranian</h2>
 				</div>
 
-				<div class="">
+				<div>
 					<div class="item">
 						<div class="panel-body container">
 							<h3>Empanada Gallega</h3>
 							<p>A savory pie stuffed with Gallicain pork and peppers, onion and oregano.</p>
-							<div>
-								<p class="total-price">$10.50</p>
-								<input type="button" class="plus-btn" onclick="plus()">
-								<input type="text" value="QTY" id="count">
-								<input type="button" class="minus-btn" onclick="minus()">
-							</div>
+							<form>
+								<div>
+									<p class="total-price">$10.50</p>
+									<div>
+										<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
+									</div>
+									<input type="text" value="0" id="count">
+									<div>
+										<input type="button" class="minus-btn btn" onclick="minus()">
+									</div>
+								</div>
+							</form>	
 						</div>
 					</div> <!---- /item -->
 
@@ -78,12 +84,18 @@
 						<div class="panel-body">
 							<h3>Patayas Bravas</h3>
 							<p>Fried potatoes, dusted in seasonings served with a garlic-paprika aloli.</p>
-							<div>
-								<p class="price">$6.25</p>
-								<input type="button" class="plus-btn" onclick="plus()">
-								<input type="text" value="QTY" id="count">
-								<input type="button" class="minus-btn" onclick="minus()">
-							</div>
+							<form>
+								<div>
+									<p class="price">$6.25</p>
+									<!-- <div>
+											<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
+										</div>
+										<input type="text" value="QTY" id="count">
+										<div>
+											<input type="button" class="minus-btn btn" onclick="minus()">
+										</div> -->
+								</div>
+							</form>	
 						</div>
 					</div> <!---- /item -->
 
@@ -91,24 +103,36 @@
 						<div class="panel-body">
 							<h3>Brusschetta</h3>
 							<p>Grilled baguette with a coating of Parmesan topped with heirloom tomatoes dressed on balsamic vinegar and olive oil with fresh basil and garlic.</p>
-							<div>
-								<p class="price">$6.50</p>
-								<input type="button" class="plus-btn" onclick="plus()">
-								<input type="text" value="QTY" id="count">
-								<input type="button" class="minus-btn" onclick="minus()">
-							</div>
+							<form>
+								<div>
+									<p class="price">$6.50</p>
+									<!-- <div>
+											<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
+										</div>
+										<input type="text" value="QTY" id="count">
+										<div>
+											<input type="button" class="minus-btn btn" onclick="minus()">
+										</div> -->
+								</div>
+							</form>	
 						</div>
 					</div> <!---- /item -->
 
 					<div class="item">
 						<div class="panel-body">
-							<h3>Lemon Sofa</h3>
-							<div>
-								<p class="price">$2.00</p>
-								<input type="button" class="plus-btn" onclick="plus()">
-								<input type="text" value="QTY" id="count">
-								<input type="button" class="minus-btn" onclick="minus()">
-							</div>
+							<h3>Lemon Soda</h3>
+							<form>
+								<div>
+									<p class="price">$2.00</p>
+									<div>
+											<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
+										</div>
+										<input type="text" value="QTY" id="count">
+										<div>
+											<input type="button" class="minus-btn btn" onclick="minus()">
+										</div>
+								</div>
+							</form>	
 						</div>
 					</div> <!---- /item -->
 
@@ -221,7 +245,7 @@
 		</div> <!-- /Container -->
 
 		<footer>
-			<h4>some text</h4>
+			<p>some text</p>
 		</footer>
 
 	</body>

@@ -11,9 +11,17 @@ div.panel-body {
 	border-width: 5px;
 }
 
+p {
+	margin: 0;
+}
+
 .glyphicon-menu-right:before {
 	display: inline-block;
 	float: right !important;
+}
+
+.panel {
+	margin-top: 40px;
 }
 
 /*****************************************
