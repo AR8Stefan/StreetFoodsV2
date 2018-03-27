@@ -1,18 +1,14 @@
-// let count = 0;
-// let countEl = document.getElementById("count");
+var count = 0;
+var countEl = document.getElementById("count");
 function plus(){
-	countEl = document.getElementById("count")
-	count = count.value
-  count++;
-  countEl.value = count;
+    count++;
+    countEl.value = count;
 }
 function minus(){
   if (count > 0) {
-  	countEl = document.getElementById("count")
-	  count = count.value
     count--;
     countEl.value = count;
-  }  
+  } 
 }
 
 // $(function() {
