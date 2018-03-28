@@ -28,7 +28,7 @@
 		      	<a href=""><img style="" class="mobile-icons visible-xs" src="assets/images/search.svg" alt="Search"></a>
 				   	<a href=""><img class="mobile-icons visible-xs" src="assets/images/cart-mob.svg" alt="Checkout"></a>
 				  </div>
-		      <a href="#"><img class="main-logo" src="assets/images/logo.svg"></a>
+		      
 		      
 		    </div>
 
@@ -51,48 +51,7 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<div>
-			<div id="map"></div>
-		</div>
-
-    <script>
-      let map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 34.052234, lng: -118.243685},
-          zoom: 11
-        });
-        /***************
-				Markers
-        ***************/ 
-        marker = new google.maps.Marker({
-          position: {lat: 34.062792, lng: -118.239451},
-          map: map
-        });
-
-        marker = new google.maps.Marker({
-        	position: {lat: 34.011091, lng: -118.497448},
-        	map: map
-        });
-
-        marker = new google.maps.Marker({
-        	position: {lat: 34.023155, lng: -118.282746},
-        	map: map
-        });
-
-        marker = new google.maps.Marker({
-        	position: {lat: 33.945478, lng: -118.344315},
-        	map: map
-        });
-
-        marker =new google.maps.Marker({
-        	position: {lat: 34.023620, lng: -118.174826},
-        	map: map
-        })
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtIoa_w3_ZFPNfMbxeV-inByD0p8T9A1w&callback=initMap"
-    async defer></script>
+		
 
 		<div class="nav-section visible-xs">
 			<a href="pages/events.html"><div class="street-event menu-menu">STREET EVENTS <span class=" glyphicon glyphicon-menu-right"></span></div></a>
