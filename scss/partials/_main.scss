@@ -2,4 +2,24 @@
 General
 *****************************************/
 
+.trash-hands {
+	font-family: TrashHand;
+	font-size: 4em;
+}
 
+/* NAVBAR *******************************/
+
+.main-logo {
+	z-index: 1;
+	/*height: 4.5em;*/
+	overflow: visible;
+	float: right;
+}
+
+.navbar-brand {
+	margin: 0 auto;
+}
+
+/*.navbar {
+	max-height: 10vh; 
+}*/

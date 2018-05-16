@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA;;0CAE0C;ACF1C;;0CAE0C",
-"sources": ["../scss/main-styles.scss","../scss/partials/main.scss"],
+"mappings": "AAAA;;0CAE0C;ACF1C;;0CAE0C;AAE1C,YAAa;EACZ,WAAW,EAAE,SAAS;EACtB,SAAS,EAAE,GAAG;;AAGf,0CAA0C;AAE1C,UAAW;EACV,OAAO,EAAE,CAAC;EACV,kBAAkB;EAClB,QAAQ,EAAE,OAAO;EACjB,KAAK,EAAE,KAAK;;AAGb,aAAc;EACb,MAAM,EAAE,MAAM;;AAGf;;GAEG;ACvBH;;;;;;;;;;;;;GAaG;AAUH,UASC;EARC,WAAW,EAAE,SAAS;EACtB,GAAG,EAAE,kCAAkC;EACvC,GAAG,EAAE,mPAGiE;EACtE,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;AAGpB,eAAgB;EACf,gBAAgB,EAfL,OAAO;EAgBlB,MAAM,EAAE,IAAI;;AAGb,8BAA+B;EAC9B,MAAM,EAAE,IAAI;EACZ,4CAAc;IACb,gBAAgB,EAAE,KAAK;;AAIzB,sBAAuB;EACtB,KAAK,EAAE,KAAK",
+"sources": ["../scss/main-styles.scss","../scss/partials/_main.scss","../scss/partials/_colors.scss"],
 "names": [],
 "file": "main-styles.css"
 }

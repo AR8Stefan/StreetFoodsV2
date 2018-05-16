@@ -42,12 +42,12 @@ div.col-xs-8 {
 	height: 400px;
   width: 100%;
 }
-
+/*
 img {
 	display: block;
 	margin: 0 auto;
 	padding: 20px 0 0 0;
-}
+}*/
 
 img.menu-trucks {
 	margin: 10px 0;
@@ -152,20 +152,7 @@ input{
 FONTS & COLORS
 *****************************************/
 
-/*{ 
-	--green: #8cc540;
-	--orange: #f36321;
-	--blue: #00abd4;
-	--hotpink: #ee145c;
-	--purple: #c53a94;
-	--purplish-brown: #312f30;
-	--heather-gray: #4c4c4e;
-	--charcoal-grey: #404041;
-	--light-gray: #eeefef;
-	--silver: #d3d4d6;
-	font-family: 'Open Sans', sans-serif;
-	font-family: Trash-Hands;
-}*/
+
 
 @font-face {
   font-family: 'TrashHand';

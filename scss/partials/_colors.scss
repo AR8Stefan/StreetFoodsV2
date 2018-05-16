@@ -1,0 +1,50 @@
+
+/*{ 
+	--green: #8cc540;
+	--orange: #f36321;
+	--blue: #00abd4;
+	--hotpink: #ee145c;
+	--purple: #c53a94;
+	--purplish-brown: #312f30;
+	--heather-gray: #4c4c4e;
+	--charcoal-grey: #404041;
+	--light-gray: #eeefef;
+	--silver: #d3d4d6;
+	font-family: 'Open Sans', sans-serif;
+	font-family: Trash-Hands;
+}*/
+
+$color-med: #ee145c;
+$color-uk: #00abd4;
+$color-south: #f36321;
+$color-east: #8cc540;
+$color-car: #c53a94;
+$color-nav: #404041;
+$color-silver: #d3d4d6;
+
+@font-face {
+  font-family: TrashHand;
+  src: url('fonts/TrashHand-webfont.eot');
+  src: url('fonts/TrashHand-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/TrashHand-webfont.woff') format('woff'),
+       url('fonts/TrashHand-webfont.ttf') format('truetype'),
+       url('fonts/TrashHand-webfont.svg#trashhandregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-default {
+	background-color: $color-nav;
+	border: none;
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+	span.icon-bar {
+		background-color: white;
+	}
+}
+
+.mediterranean > h1, p {
+	float: right;
+}
