@@ -33,18 +33,33 @@ $color-silver: #d3d4d6;
   font-style: normal;
 }
 
-.navbar-default {
+.navbar {
 	background-color: $color-nav;
-	border: none;
 }
 
-.navbar-default .navbar-toggle {
-	border: none;
-	span.icon-bar {
-		background-color: white;
+.street-events {
+	background-color: $color-uk;
+}
+
+.order-now {
+	background-color: $color-south;
+}
+
+.our-menus {
+	background-color: $color-car;
+}
+
+panel {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	img {
+		float: right;
 	}
 }
 
-.mediterranean > h1, p {
-	float: right;
-}
+
+
+
+

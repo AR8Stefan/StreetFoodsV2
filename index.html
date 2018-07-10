@@ -1,113 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>Street Foods</title>
-		<meta charset="utf-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main-styles.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<!-- <script src="//code.jquery.com/jquery.min.js"></script> -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-	</head>
-	<body>
-		<!---- START NAVIGATION ---->
-		<nav class="navbar navbar-default" id="nav-placeholder" style="z-index : 1;">
-		  <div class="container container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-	    	  <a class="navbar-brand col-sm-auto" href="#">
-				    <img src="assets/images/logo.svg">
-				  </a>		      
-		      <div>
-		      	<a href=""><img style="" class="mobile-icons visible-xs" src="assets/images/search.svg" alt="Search"></a>
-				   	<a href=""><img class="mobile-icons visible-xs" src="assets/images/cart-mob.svg" alt="Checkout"></a>
-				  </div>
-		      
-		      
-		    </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main-styles.css">
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
-		      <ul class="nav navbar-nav navbar-right">
-	          <li><a href="../index.html">Home</a></li>
-	          <li><a href="pages/orders.html">Order</a></li>
-	          <li><a href="pages/menus.html">Menus</a></li>
-	          <li><a href="pages/events.html">Events</a></li>
-	          <li><a href="pages/contact.html">Contact Us</a></li>
-		        <div class="navbar-header"> <!-- Start Nav Icons -->
-		        	<div class="icon"> <!-- Start Icons -->
-				      	<li><a href=""><img class="search-icon icons hidden-xs" src="assets/images/search.svg" alt="Search"></a></li>
-				      	<li><a href=""><img class="cart-icon icons hidden-xs" src="assets/images/cart.svg" alt="Checkout"></a></li>
-				      </div> <!-- /icons -->
-				    </div> <!-- /Nav Icons -->
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav> <!--- / NAVIGATION ---->
+    <title>Street Foods</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+        <span style="size:25px;" class="navbar-toggler-icon"></span>
+      </button>
 
-		
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Centered nav only <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown08">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="#"><img class="navbar-brand mx-auto" src="assets/images/logo.svg"></a>
+      <div>
+        <a href=""><img class="navbar-search" src="assets/images/search-mob.svg"></a>
+        <a href=""><img class="navbar-cart" src="assets/images/cart-mob.svg"></a>
+      </div>
+    </nav>
 
-		<div class="nav-section visible-xs">
-			<a href="pages/events.html"><div class="street-event menu-menu">STREET EVENTS <span class=" glyphicon glyphicon-menu-right"></span></div></a>
-			<a href="pages/menus.html"><div class="order-now menu-menu">ORDER NOW <span class="glyphicon glyphicon-menu-right"></span></div></a>
-			<a href="pages/menus.html"><div class="our-menu menu-menu">OUR MENUS <span class="glyphicon glyphicon-menu-right"></span></div></a>
-		</div>
+    <div> <!---- GOOGLE MAP ---->
+      <div style="width: 100%; height: 45vh;" id="map"></div>
+    </div>
 
-		<div class="menu-list container"> <!---- BODY ---->
-			<div class="row">
-				<div class="main-heading">
-					
-				</div>
+    <!-- MENU SECTION -->
+    <div class="main-menus">
+      <div class="container">
+        <div class="row">
+          <panel class="col street-events">Street Events
+            <img src="assets/images/right-arrow.svg" height="50" width="50">
+          </panel>
+          <div class="w-100"></div>
+          <panel class="col order-now">Order Now
+            <img src="assets/images/right-arrow.svg" height="50" width="50">
+          </panel>
+          <div class="w-100"></div>
+          <panel class="col our-menus">Our Menus
+            <img src="assets/images/right-arrow.svg" height="50" width="50">
+          </panel>
+        </div>
+      </div>
+    </div>
 
-				<div class="the-med menu-select col-xs-12">
-					<a href="#"><img style="height: 110px; margin: 0 auto;" class="menu-truck col-xs-4 col-sm-12" src="assets/images/truckmed.svg"></a>
-					<div class="col-xs-8 col-sm-12">
-						
-					</div>	
-				</div>
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid main-content">
+      <h1 class="mx-auto main-title trash-hands" style="width: 360px;">Eat local,<br> Taste the world.</h1>
+      
+      <!-- TRUCKS -->
+      <div class="row">
+        <img src="assets/images/truckmed.svg" class=" col-md-4 truck">
+        <div class="col-md-6">
+          <h1>The Mediterranean</h1>
+          <p>Serving up foods from Spain, Italy & Greece.</p> <br>
+          <a href="#">View Truck</a>
+        </div>
+      </div>
 
-				
-		</div> <!---- /BODY ---->
+      <div class="row">
+        <img src="assets/images/truckuk.svg" class=" col-md-4 truck">
+        <div class="col-md-6">
+          <h1>The Mediterranean</h1>
+          <p>Serving up foods from Spain, Italy & Greece.</p> <br>
+          <a href="#">View Truck</a>
+        </div>
+      </div>
 
-		<div class="nav-section hidden-xs">
-			<a href="pages/events.html"><div class="street-event menu-menu">STREET EVENTS <span class=" glyphicon glyphicon-menu-right"></span></div></a>
-			<a href="pages/menus.html"><div class="order-now menu-menu">ORDER NOW <span class="glyphicon glyphicon-menu-right"></span></div></a>
-			<a href="pages/menus.html"><div class="our-menu menu-menu">OUR MENUS <span class="glyphicon glyphicon-menu-right"></span></div></a>
-		</div>
+      <div class="row">
+        <img src="assets/images/trucksouth.svg" class=" col-md-4 truck">
+        <div class="col-md-6">
+          <h1>The Mediterranean</h1>
+          <p>Serving up foods from Spain, Italy & Greece.</p> <br>
+          <a href="#">View Truck</a>
+        </div>
+      </div>
 
-		<footer class="container container-fluid">
-			<form class="form-inline">
-				<label for="inputEmail">GET UPDATES</label>
-			  <div class="form-group">
-			    
-			    <input type="email" class="form-control" id="inputEmail" placeholder="EMAIL@EXAMPLE.COM" required><button type="submit" class="btn btn-default sub" style="background-color: #404041; border-color: #404041;">SUBSCRIBE</button>  
-			  </div>
-			  
-			</form>
+      <div class="row">
+        <img src="assets/images/truckeast.svg" class=" col-md-4 truck">
+        <div class="col-md-6">
+          <h1>The Mediterranean</h1>
+          <p>Serving up foods from Spain, Italy & Greece.</p> <br>
+          <a href="#">View Truck</a>
+        </div>
+      </div>
 
-			<!-- <form class="form-inline">
-  <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-  </div>
-  <button type="submit" class="btn btn-default">Send invitation</button>
-</form> -->
-		</footer>
+      <div class="row">
+        <img src="assets/images/truckcar.svg" class=" col-md-4 truck">
+        <div class="col-md-6">
+          <h1>The Mediterranean</h1>
+          <p>Serving up foods from Spain, Italy & Greece.</p> <br>
+          <a href="#">View Truck</a>
+        </div>
+      </div>
+      
 
-	</body>
+    </div> <!-- / MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <div>
+      
+    </div>
+
+    <!----/***************
+    SCRIPTS
+    ****************/---->
+
+    <!---- /* Google Maps Script */ ---->
+    <script>
+      let map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 34.052234, lng: -118.243685},
+          zoom: 11
+        });
+        /************ Markers *************/ 
+        marker = new google.maps.Marker({
+          position: {lat: 34.062792, lng: -118.239451},
+          map: map,
+          icon: "assets/images/marker.svg",
+          color: "red"
+        });
+
+        marker = new google.maps.Marker({
+          position: {lat: 34.011091, lng: -118.497448},
+          map: map
+        });
+
+        marker = new google.maps.Marker({
+          position: {lat: 34.023155, lng: -118.282746},
+          map: map
+        });
+
+        marker = new google.maps.Marker({
+          position: {lat: 33.945478, lng: -118.344315},
+          map: map
+        });
+
+        marker =new google.maps.Marker({
+          position: {lat: 34.023620, lng: -118.174826},
+          map: map
+        })
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEwye9fi0mN3izGwdqE4YcVfcLdvke6V8&callback=initMap"
+    async defer></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
-

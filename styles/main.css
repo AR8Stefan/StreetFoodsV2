@@ -186,11 +186,6 @@ p {
 	color: #4c4c4e; /*heather-gray:*/
 }
 
-/*navbar button lines*/
-.navbar-default .navbar-toggle .icon-bar {
-	background-color: white;
-}
-
 footer,
 .navbar-default,
 .navbar-form,

@@ -7,19 +7,38 @@ General
 	font-size: 4em;
 }
 
-/* NAVBAR *******************************/
-
-.main-logo {
-	z-index: 1;
-	/*height: 4.5em;*/
-	overflow: visible;
-	float: right;
+.main-menus {
+	background-image: url('../assets/images/patternDarkGray.jpg');
+	margin-top: 3px;
+		panel {
+		padding: 10px;
+		margin: 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		&:first-child{
+			margin-top: 50px;
+		}
+		&:last-child {
+			margin-bottom: 50px;
+		}
+	}
 }
 
-.navbar-brand {
-	margin: 0 auto;
+.main-content {
+	div {
+		margin: 20px;
+		div {
+			float: left;
+		}
+	}
 }
 
-/*.navbar {
-	max-height: 10vh; 
-}*/
+.main-title {
+	text-transform: capitalize;
+	text-align: center;
+	margin: 30px auto;
+}
+
+.truck {
+	display: inline-block;
+}

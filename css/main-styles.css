@@ -1,26 +1,6 @@
 /*****************************************
 Import Partials
 *****************************************/
-/*****************************************
-General
-*****************************************/
-.trash-hands {
-  font-family: TrashHand;
-  font-size: 4em; }
-
-/* NAVBAR *******************************/
-.main-logo {
-  z-index: 1;
-  /*height: 4.5em;*/
-  overflow: visible;
-  float: right; }
-
-.navbar-brand {
-  margin: 0 auto; }
-
-/*.navbar {
-	max-height: 10vh; 
-}*/
 /*{ 
 	--green: #8cc540;
 	--orange: #f36321;
@@ -41,16 +21,76 @@ General
   src: url("fonts/TrashHand-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/TrashHand-webfont.woff") format("woff"), url("fonts/TrashHand-webfont.ttf") format("truetype"), url("fonts/TrashHand-webfont.svg#trashhandregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.navbar-default {
-  background-color: #404041;
+.navbar {
+  background-color: #404041; }
+
+.street-events {
+  background-color: #00abd4; }
+
+.order-now {
+  background-color: #f36321; }
+
+.our-menus {
+  background-color: #c53a94; }
+
+panel {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; }
+  panel img {
+    float: right; }
+
+/*****************************************
+General
+*****************************************/
+.trash-hands {
+  font-family: TrashHand;
+  font-size: 4em; }
+
+.main-menus {
+  background-image: url("../assets/images/patternDarkGray.jpg");
+  margin-top: 3px; }
+  .main-menus panel {
+    padding: 10px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .main-menus panel:first-child {
+      margin-top: 50px; }
+    .main-menus panel:last-child {
+      margin-bottom: 50px; }
+
+.main-content div {
+  margin: 20px; }
+  .main-content div div {
+    float: left; }
+
+.main-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 30px auto; }
+
+.truck {
+  display: inline-block; }
+
+/* NAVBAR *******************************/
+.custom-toggler.navbar-toggler {
   border: none; }
 
-.navbar-default .navbar-toggle {
-  border: none; }
-  .navbar-default .navbar-toggle span.icon-bar {
-    background-color: white; }
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
-.mediterranean > h1, p {
-  float: right; }
+.navbar-brand {
+  top: 10px;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0; }
+
+.navbar-collapse {
+  margin-left: 115px; }
+
+span.navbar-toggler-icon {
+  color: white; }
 
 /*# sourceMappingURL=main-styles.css.map */
