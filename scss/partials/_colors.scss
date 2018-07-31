@@ -14,13 +14,18 @@
 	font-family: Trash-Hands;
 }*/
 
-$color-med: #ee145c;
-$color-uk: #00abd4;
-$color-south: #f36321;
-$color-east: #8cc540;
-$color-car: #c53a94;
-$color-nav: #404041;
-$color-silver: #d3d4d6;
+$color-med: #ee145c; //hotpink
+$color-uk: #00abd4; //blue
+$color-south: #f36321; //orange
+$color-east: #8cc540; //green
+$color-car: #c53a94; //purple
+$color-nav: #404041; //charcoal-grey
+$color-silver: #d3d4d6; //silver
+$color-footer: #312f30; //purple-brown
+
+$color-footer-heading: white;
+$color-facebook: #4267b2;
+$color-twitter: #1DA1F2;
 
 @font-face {
   font-family: TrashHand;
@@ -49,6 +54,47 @@ $color-silver: #d3d4d6;
 	background-color: $color-car;
 }
 
+.the-med {
+	color: $color-med;
+}
+
+.the-uk {
+	color: $color-uk;
+}
+
+.the-south {
+	color: $color-south;
+}
+
+.the-east {
+	color: $color-east;
+}
+
+.the-car {
+	color: $color-car;
+}
+
+#footer {
+	background-color: $color-footer;
+	p {
+		color: $color-silver;
+	}
+	a {
+		color: $color-silver;
+		&:hover {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+}
+
+.btn {
+	color: white;
+	background-color: $color-nav;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
 panel {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2rem;
@@ -58,6 +104,20 @@ panel {
 		float: right;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

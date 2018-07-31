@@ -4,14 +4,14 @@ General
 
 .trash-hands {
 	font-family: TrashHand;
-	font-size: 4em;
+	font-size: 4.5em;
 }
 
 .main-menus {
 	background-image: url('../assets/images/patternDarkGray.jpg');
 	margin-top: 3px;
 		panel {
-		padding: 10px;
+		padding: 20px;
 		margin: 10px;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -22,6 +22,44 @@ General
 			margin-bottom: 50px;
 		}
 	}
+}
+
+/*****************************************
+SVG ICON STYLES
+*****************************************/
+
+.svg-icon {
+	padding-left: 10px;
+	padding-right: 5px;
+} 
+
+.fb-logo {
+	display: inline-block;
+	background-color: $color-facebook;
+	padding: 12px 20px 8px 20px;
+	border-radius: 50%;
+}
+
+.twitter-logo {
+	display: inline-block;
+	background-color: $color-twitter;
+	padding: 15px 13px;
+	border-radius: 50%;
+}
+
+/*****************************************
+MENU STYLES
+*****************************************/
+
+.menu-heading {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+.menu-description {
+	font-weight: 300;
+	font-size: 1.3em;
 }
 
 .main-content {
@@ -41,4 +79,45 @@ General
 
 .truck {
 	display: inline-block;
+	max-height: 100px;
 }
+
+#view {
+	font-size: 24px;
+	font-weight: 200;
+	&:hover {
+		text-decoration: underline;
+		color: $color-med;
+	}
+}
+
+/*****************************************
+Footer
+*****************************************/
+
+.footer-title {
+	text-transform: capitalize;
+	color: $color-footer-heading;
+}
+
+#footer {
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

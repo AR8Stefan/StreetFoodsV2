@@ -1,254 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>Stefan's Portfolio</title>
-		<meta charset="utf-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../styles/main.css">
-		<link rel="stylesheet" href="../styles/menus.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<!---- SCRIPTS ----> 
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <!----- Add page functions to bottom of file ---->
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-	</head>
-	<body>
-		<nav class="navbar navbar-default" id="nav-placeholder" style="z-index : 1;">
-		  <div class="container container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <div>
-		      	<a href=""><img style="" class="mobile-icons visible-xs" src="../assets/images/search.svg" alt="Search"></a>
-				   	<a href="pages/order.html"><img class="mobile-icons visible-xs" src="../assets/images/cart-mob.svg" alt="Checkout"></a>
-				  </div>
-		      <a href="../index.html"><img class="main-logo" src="../assets/images/logo.svg"></a>
-		      
-		    </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main-styles.css">
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
-		      <ul class="nav navbar-nav navbar-right">
-	          <li><a href="../index.html">Home</a></li>
-	          <li><a href="order.html">Order</a></li>
-	          <li><a href="#">Menus</a></li>
-	          <li><a href="events.html">Events</a></li>
-	          <li><a href="contact.html">Contact Us</a></li>
-		        <div class="navbar-header"> <!-- Start Nav Icons -->
-		        	<div class="icon"> <!-- Start Icons -->
-				      	<li><a href=""><img class="search-icon icons hidden-xs" src="../assets/images/search.svg" alt="Search"></a></li>
-				      	<li><a href=""><img class="cart-icon icons hidden-xs" src="../assets/images/cart.svg" alt="Checkout"></a></li>
-				      </div> <!-- /icons -->
-				    </div> <!-- /Nav Icons -->
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
+    <title>Street Foods</title>
+  </head>
+  <body>
 
-		<div class="container">
-			<!-- Begin menu #1 -->
-			<div class="panel panel-default">
-				<div class="panel-heading mediteranian">
-					<h2 class="menu-title">The Mediteranian</h2>
-				</div>
+  <nav class="navbar navbar-dark">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img class="navbar-brand mx-auto" src="../assets/images/logo.svg"></a>
 
-				<div>
-					<div class="item">
-						<div class="panel-body container">
-							<h3>Empanada Gallega</h3>
-							<p>A savory pie stuffed with Gallicain pork and peppers, onion and oregano.</p>
-							<form>
-								<div>
-									<p class="total-price">$10.50</p>
-									<div>
-										<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
-									</div>
-									<input type="text" value="0" id="count">
-									<div>
-										<input type="button" class="minus-btn btn" onclick="minus()">
-									</div>
-								</div>
-							</form>	
-						</div>
-					</div> <!---- /item -->
+    <div>
+      <a href="#"><img class="svg-icon navbar-search" src="../assets/images/search-mob.svg"></a>
+      <a href="#"><img class="svg-icon navbar-cart" src="../assets/images/cart-mob.svg"></a>
+    </div>
 
-					<div class="item">
-						<div class="panel-body">
-							<h3>Patayas Bravas</h3>
-							<p>Fried potatoes, dusted in seasonings served with a garlic-paprika aloli.</p>
-							<form>
-								<div>
-									<p class="price">$6.25</p>
-									<div>
-											<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
-										</div>
-										<input type="text" value="QTY" id="count">
-										<div>
-											<input type="button" class="minus-btn btn" onclick="minus()">
-										</div>
-								</div>
-							</form>	
-						</div>
-					</div> <!---- /item -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Menus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-					<div class="item">
-						<div class="panel-body">
-							<h3>Brusschetta</h3>
-							<p>Grilled baguette with a coating of Parmesan topped with heirloom tomatoes dressed on balsamic vinegar and olive oil with fresh basil and garlic.</p>
-							<form>
-								<div>
-									<p class="price">$6.50</p>
-									<div>
-											<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
-										</div>
-										<input type="text" value="QTY" id="count">
-										<div>
-											<input type="button" class="minus-btn btn" onclick="minus()">
-										</div>
-								</div>
-							</form>	
-						</div>
-					</div> <!---- /item -->
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid main-content">
+      <h1 class="mx-auto main-title trash-hands">everyone loves <br> skipping the line.</h1>
+      
+      <!-- TRUCKS -->
+      <div class="row align-items-center">
+        <img src="assets/images/truckmed.svg" class=" col-sm-4 truck">
+        <div class="col-sm-6">
+          <h1 class="menu-heading">The Mediterranean</h1>
+          <p class="menu-description">Serving up foods from Spain, Italy & Greece.</p> 
+          <a href="#" id="view" class="the-med align-items-start">View Truck</a>
+        </div>
+      </div>
 
-					<div class="item">
-						<div class="panel-body">
-							<h3>Lemon Soda</h3>
-							<form>
-								<div>
-									<p class="price">$2.00</p>
-									<div>
-											<input type="button" class="plus-btn plusbtn btn" onclick="plus()">
-										</div>
-										<input type="text" value="QTY" id="count">
-										<div>
-											<input type="button" class="minus-btn btn" onclick="minus()">
-										</div>
-								</div>
-							</form>	
-						</div>
-					</div> <!---- /item -->
+      <div class="row align-items-center">
+        <img src="assets/images/truckuk.svg" class=" col-sm-4 truck">
+        <div class="col-sm-6">
+          <h1 class="menu-heading">The United Kingdom</h1>
+          <p class="menu-description">Serving up foods from Ireland, Wales, Scotland & England.</p> 
+          <a href="#" id="view" class="the-uk align-items-start">View Truck</a>
+        </div>
+      </div>
 
-				</div> <!-- /Container -->
-			</div>
-			<!-- /Menu #1-->
+      <div class="row align-items-center">
+        <img src="assets/images/trucksouth.svg" class=" col-sm-4 truck">
+        <div class="col-sm-6">
+          <h1 class="menu-heading">South of the Border</h1>
+          <p class="menu-description">Serving up foods from Mexico, Cuba, Honduras & Costa Rica.</p> 
+          <a href="#" id="view" class="the-south align-items-start">View Truck</a>
+        </div>
+      </div>
 
-			<!-- Begin menu #2 -->
-			<div class="panel panel-default">
-				<div class="panel-heading theuk"><h2 class="menu-title">The United Kingdom</h2></div>
-				<div class="container">
-				<div class="panel-body">
-					
-				</div>
-				<div class="panel-body">
-					
-				</div>
-				<div class="panel-body">
-					
-				</div>
-				<div class="panel-body">
-					
-				</div>
-				</div> <!-- /Container -->
-				<div class="container share-buttons"> 
-					<button class="follow social feed">Folllow</button> 
-					<button class="share-it social feed">View More</button>
-				</div>
-			</div>
-			<!-- /Menu #2-->
+      <div class="row align-items-center">
+        <img src="assets/images/truckeast.svg" class=" col-sm-4 truck">
+        <div class="col-sm-6">
+          <h1 class="menu-heading">The Far East</h1>
+          <p class="menu-description">Serving up foods from China, Japan, Korea, Thailand & Vietnam.</p> 
+          <a href="#" id="view" class="the-east align-items-start">View Truck</a>
+        </div>
+      </div>
 
-			<!-- Begin menu #3 -->
-			<div class="panel panel-default">
-				<div class="panel-heading south-of-the-border">
-					<h2 class="menu-title">South of the Border</h2></div>
-				<div class="container">
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-				</div> <!-- /Container -->
-				<div class="container share-buttons"> 
-					<button class="follow social feed">Folllow</button> 
-					<button class="share-it social feed">View More</button>
-				</div>
-			</div>
-			<!-- /Menu #3-->	
+      <div class="row align-items-center">
+        <img src="assets/images/truckcar.svg" class=" col-sm-4 truck">
+        <div class="col-sm-6">
+          <h1 class="menu-heading">The Carribean</h1>
+          <p class="menu-description">Serving up foods from The Bahamas, Barbados, Jamaica & Aruba.</p> 
+          <a href="#" id="view" class="the-car align-items-start">View Truck</a>
+        </div>
+      </div>
+      
 
-			<!-- Begin menu #4 -->
-			<div class="panel panel-default">
-				<div class="panel-heading the-far-east">
-					<h2 class="menu-title">The Far East</h2>
-				</div>
-				<div class="container">
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-				</div> <!-- /Container -->
-				<div class="container share-buttons"> 
-					<button class="follow social feed">Folllow</button> 
-					<button class="share-it social feed">View More</button>
-				</div>
-			</div>
-				<!-- /Menu #4-->
+    </div> <!-- / MAIN CONTENT -->
+
+    <!-- FOOTER -->
+    <div id="footer" class="container-fluid">
+
+      <div class="container"> <!-- Start Update Subscription & Social fields  -->
+        <h3 class="footer-title">Get Updates</h3>
+          <div id="signup_footer" class="d-flex align-items-start">
+            <div class="form-group">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_e3428dd6b8fda73bc5ba8b6e6_198881a019" tabindex="-1" value="">
+              </div>
+              <input style="width: 38vw; border-radius: 0; height: 48px;" id="mce-EMAIL" class="footer__email-input form-control form-control--muted" name="EMAIL" type="email" aria-describedby="footerEmail" placeholder="EMAIL@EXAMPLE.COM">
+            </div>
+            <input style="border-radius: 0; height: 48px;" class="btn btn-brand" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
 
 
-			<!-- Begin menu #5 -->
-			<div class="panel panel-default">
-				<div class="panel-heading carrabean">
-					<h2 class="menu-title">The Carrabean</h2>
-				</div>
-				<div class="container">
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-					<div class="panel-body">
-						
-					</div>
-				</div> <!-- /Container -->
-				<div class="container share-buttons"> 
-					<button class="follow social feed">Folllow</button> 
-					<button class="share-it social feed">View More</button>
-				</div>
-			</div>
-			<!-- /Menu #5-->	
+          <div class="container mx-auto"> <!---- SOCIAL LINKS ---->
+            <div class="row justify-content-around"> 
+              <div class="fb-logo">
+                <a href="https://facebook.com"><img class="mx-auto" src="../assets/images/facebook.svg"></a>
+              </div>
+              <div class="twitter-logo">
+                <a href="https://twitter.com"><img class="mx-auto " src="../assets/images/twitter.svg"></a>
+              </div>  
+            </div>
+          </div> <!-- /SOCIAL LINKS -->  
+        </div> 
+      </div> <!-- /Update Subscription & Social fields-->
 
-		</div> <!-- /Container -->
+      <div class="container contact-info">
+        <h3 class="footer-title">Contact Us</h3>
+        <p>Phone: (123) 456-7890</p>
+        <p>E-mail: customerservice@streetfoods.com</p>
+      </div>
 
-		<footer>
-			<p>some text</p>
-		</footer>
+      <div class="container">
+        <div class="row justify-content-start">
+          <a class="col-6" href="">Home</a>
+          <a class="col-6" href="">Help</a>
+          <a class="col-6" href="">Order</a>
+          <a class="col-6" href="">FAQ</a>
+          <a class="col-6" href="">Menu</a>
+          <a class="col-6" href="">About Us</a>
+          <a class="col-6" href="">Events</a>
+          <a class="col-6" href="">Contact</a>
+        </div> 
+      </div>   
+    </div>
 
-	</body>
+    <!----/***************
+    SCRIPTS
+    ****************/---->
 
-	<script type="text/javascript" src="../jscripts/menu.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
