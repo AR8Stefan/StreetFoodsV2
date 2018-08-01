@@ -38,6 +38,10 @@ $color-twitter: #1DA1F2;
   font-style: normal;
 }
 
+/*****************************************
+BACKGROUNDS
+*****************************************/
+
 .navbar {
 	background-color: $color-nav;
 }
@@ -53,6 +57,14 @@ $color-twitter: #1DA1F2;
 .our-menus {
 	background-color: $color-car;
 }
+
+.menu-mediteranean {
+	background-color: $color-med;
+}
+
+/*****************************************
+TEXT STYLES
+*****************************************/
 
 .the-med {
 	color: $color-med;
@@ -73,6 +85,10 @@ $color-twitter: #1DA1F2;
 .the-car {
 	color: $color-car;
 }
+
+/*****************************************
+OTHER - UNSORTED
+*****************************************/
 
 #footer {
 	background-color: $color-footer;

@@ -24,6 +24,10 @@ General
 	}
 }
 
+.btn {
+	border-radius: 0;
+}
+
 /*****************************************
 SVG ICON STYLES
 *****************************************/
@@ -48,7 +52,7 @@ SVG ICON STYLES
 }
 
 /*****************************************
-MENU STYLES
+MENU STYLES -- MAIN PAGE --
 *****************************************/
 
 .menu-heading {
@@ -89,6 +93,33 @@ MENU STYLES
 		text-decoration: underline;
 		color: $color-med;
 	}
+}
+
+/*****************************************
+MENU STYLES -- MENU PAGE --
+*****************************************/
+
+.main-menus-page {
+	.card {
+		margin: 25px 10px ;
+		color: white;
+	}
+}
+
+
+
+.card-body {
+	border-style: solid;
+	border-color: $color-silver;
+	border-width: 2px;
+	border-top: 0px;
+	h5 {
+		text-transform: capitalize;
+	} 
+}
+
+.add-to-order {
+	
 }
 
 /*****************************************

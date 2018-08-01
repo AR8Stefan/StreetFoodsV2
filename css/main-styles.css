@@ -21,6 +21,9 @@ Import Partials
   src: url("fonts/TrashHand-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/TrashHand-webfont.woff") format("woff"), url("fonts/TrashHand-webfont.ttf") format("truetype"), url("fonts/TrashHand-webfont.svg#trashhandregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+/*****************************************
+BACKGROUNDS
+*****************************************/
 .navbar {
   background-color: #404041; }
 
@@ -33,6 +36,12 @@ Import Partials
 .our-menus {
   background-color: #c53a94; }
 
+.menu-mediteranean {
+  background-color: #ee145c; }
+
+/*****************************************
+TEXT STYLES
+*****************************************/
 .the-med {
   color: #ee145c; }
 
@@ -48,6 +57,9 @@ Import Partials
 .the-car {
   color: #c53a94; }
 
+/*****************************************
+OTHER - UNSORTED
+*****************************************/
 #footer {
   background-color: #312f30; }
   #footer p {
@@ -92,6 +104,9 @@ General
     .main-menus panel:last-child {
       margin-bottom: 50px; }
 
+.btn {
+  border-radius: 0; }
+
 /*****************************************
 SVG ICON STYLES
 *****************************************/
@@ -112,7 +127,7 @@ SVG ICON STYLES
   border-radius: 50%; }
 
 /*****************************************
-MENU STYLES
+MENU STYLES -- MAIN PAGE --
 *****************************************/
 .menu-heading {
   font-weight: 500;
@@ -143,6 +158,21 @@ MENU STYLES
   #view:hover {
     text-decoration: underline;
     color: #ee145c; }
+
+/*****************************************
+MENU STYLES -- MENU PAGE --
+*****************************************/
+.main-menus-page .card {
+  margin: 25px 10px;
+  color: white; }
+
+.card-body {
+  border-style: solid;
+  border-color: #d3d4d6;
+  border-width: 2px;
+  border-top: 0px; }
+  .card-body h5 {
+    text-transform: capitalize; }
 
 /*****************************************
 Footer
