@@ -103,6 +103,8 @@ General
       margin-top: 50px; }
     .main-menus panel:last-child {
       margin-bottom: 50px; }
+    .main-menus panel a {
+      color: white; }
 
 .btn {
   border-radius: 0; }
@@ -164,6 +166,8 @@ MENU STYLES -- MENU PAGE --
 *****************************************/
 .main-menus-page .card {
   margin: 25px 10px;
+  color: black; }
+.main-menus-page .card-header {
   color: white; }
 
 .card-body {
@@ -173,6 +177,24 @@ MENU STYLES -- MENU PAGE --
   border-top: 0px; }
   .card-body h5 {
     text-transform: capitalize; }
+
+.price {
+  font-size: 2.75em; }
+
+input {
+  border-style: none; }
+
+.plus-button {
+  background-color: #ee145c;
+  border-radius: 50%; }
+
+.minus-button {
+  background-color: #404041;
+  border-radius: 50%; }
+
+#quantity {
+  background-color: #d3d4d6;
+  padding: 10px 0px 10px 10px; }
 
 /*****************************************
 Footer

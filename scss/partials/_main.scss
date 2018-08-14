@@ -21,6 +21,10 @@ General
 		&:last-child {
 			margin-bottom: 50px;
 		}
+
+		a {
+			color: white;
+		}
 	}
 }
 
@@ -101,12 +105,13 @@ MENU STYLES -- MENU PAGE --
 
 .main-menus-page {
 	.card {
-		margin: 25px 10px ;
+		margin: 25px 10px;
+		color: black;
+	}
+	.card-header {
 		color: white;
 	}
 }
-
-
 
 .card-body {
 	border-style: solid;
@@ -118,8 +123,26 @@ MENU STYLES -- MENU PAGE --
 	} 
 }
 
-.add-to-order {
-	
+.price {
+	font-size: 2.75em;
+}
+
+input {
+	border-style: none;
+}
+
+.plus-button {
+	background-color: $color-med;
+	border-radius: 50%;
+}
+.minus-button {
+	background-color: $color-nav;
+	border-radius: 50%;
+}
+
+#quantity {
+	background-color: $color-silver;
+	padding: 10px 0px 10px 10px;
 }
 
 /*****************************************
