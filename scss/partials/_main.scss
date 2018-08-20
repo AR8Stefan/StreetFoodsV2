@@ -134,10 +134,12 @@ input {
 .plus-button {
 	background-color: $color-med;
 	border-radius: 50%;
+	padding: 6px;
 }
 .minus-button {
 	background-color: $color-nav;
 	border-radius: 50%;
+	padding: 6px;
 }
 
 #quantity {
