@@ -10,9 +10,10 @@ The idea behind the StreetFoods Project is about food trucks that are tracked ar
 - Overhanging image from the navigation. (moved on, in progress.)
 - Introducing Sass for the first time in a project of my own helped me understand CSS more.
 
-###### Improvments I could make: (project and myself)
+### Improvments I could make: - Project and myself
 - Prioritise features. Work on one thing, make it look good before moving to the next thing.
-- Seek assistance instead of struggling for too long. 
+- Seek assistance instead of struggling for too long.
+- Not be afraid of moving to another part if something isn't ready yet.
 - Main SreetFoods logo needs to overhang over navbar and map.
 
 #### [My Live Project]() - NO LINK YET
