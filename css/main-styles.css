@@ -187,12 +187,14 @@ input {
 .plus-button {
   background-color: #ee145c;
   border-radius: 50%;
-  padding: 6px; }
+  padding: 6px;
+  margin: 20px; }
 
 .minus-button {
   background-color: #404041;
   border-radius: 50%;
-  padding: 6px; }
+  padding: 7px;
+  margin: 20px; }
 
 #quantity {
   background-color: #d3d4d6;

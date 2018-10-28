@@ -1,5 +1,5 @@
 var count = 0;
-var countEl = document.getElementById("count");
+var countEl = document.getElementById("quantity");
 function plus(){
     count++;
     countEl.value = count;

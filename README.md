@@ -1,10 +1,10 @@
-#StreetFoods
+# StreetFoods
 
 #### [Go to Heroku App](https://streetfoodsv2.herokuapp.com/) - Reccomended for mobile.
 
-#ABOUT STREET FOODS
+# ABOUT STREET FOODS
 
-The idea behind the StreetFoods Project is about food trucks that are tracked around Los Angeles. You open the web app on your phone or desktop and you can see where the trucks are located, you can then pick a truck and order your food and then go to the truck to pay and pick up your food without waiting in line.
+The idea behind the StreetFoods Project is about food trucks that are tracked around Los Angeles. You open the web app on your mobile phone or smart device and you can see where the trucks are located, you can then pick a truck and order your food and then go to the truck to pay and pick up your food without waiting in line.
 
 ### Personal Challenges, Enjoyment and Personal Reflection.
 
