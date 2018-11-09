@@ -15,6 +15,14 @@ Import Partials
 	font-family: 'Open Sans', sans-serif;
 	font-family: Trash-Hands;
 }*/
+/*hotpink*/
+/*blue*/
+/*orange*/
+/*green*/
+/*purple*/
+/*charcoal-grey*/
+/*silver*/
+/*purple-brown*/
 @font-face {
   font-family: TrashHand;
   src: url("fonts/TrashHand-webfont.eot");
@@ -58,6 +66,29 @@ TEXT STYLES
   color: #c53a94; }
 
 /*****************************************
+EVENT PAGE
+*****************************************/
+div.event-date {
+  background-color: #f36321;
+  /*color: white;*/ }
+
+.card-title > p {
+  color: white;
+  background-color: #f36321; }
+
+h5.card-title {
+  color: #404041;
+  /*background-color: white;*/ }
+
+.twitter-card h5 {
+  color: white;
+  background-color: #1DA1F2; }
+
+/*.mapit-btn {
+	background-color: $color-south;
+	color: white;
+}*/
+/*****************************************
 OTHER - UNSORTED
 *****************************************/
 #footer {
@@ -89,7 +120,7 @@ General
 *****************************************/
 .trash-hands {
   font-family: TrashHand;
-  font-size: 4.5em; }
+  font-size: 4em; }
 
 .main-menus {
   background-image: url("../assets/images/patternDarkGray.jpg");
@@ -108,6 +139,14 @@ General
 
 .btn {
   border-radius: 0; }
+
+.card-body {
+  border-style: solid;
+  border-color: #d3d4d6;
+  border-width: 2px;
+  border-top: 0px; }
+  .card-body h5 {
+    text-transform: capitalize; }
 
 /*****************************************
 SVG ICON STYLES
@@ -170,14 +209,6 @@ MENU STYLES -- MENU PAGE --
 .main-menus-page .card-header {
   color: white; }
 
-.card-body {
-  border-style: solid;
-  border-color: #d3d4d6;
-  border-width: 2px;
-  border-top: 0px; }
-  .card-body h5 {
-    text-transform: capitalize; }
-
 .price {
   font-size: 2.75em; }
 
@@ -200,6 +231,54 @@ input {
   background-color: #d3d4d6;
   padding: 10px 0px 10px 10px; }
 
+/*****************************************
+EVENT STYLES
+*****************************************/
+.main-events-page .card {
+  /*margin: 25px 10px;*/
+  color: black; }
+.main-events-page .card-header {
+  color: white;
+  border-radius: 0px; }
+
+.main-events {
+  padding: 10px 15px; }
+
+.event-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 15px;
+  /* CARD BORDER STYLES */
+  border-style: solid;
+  border-width: 5px;
+  border-top: 2px; }
+  .event-card:nth-child(1) {
+    margin-top: -50px; }
+
+.event-date {
+  /*margin: -1.25rem -1.25rem 0px -1.25rem;*/
+  padding: 5px; }
+
+/*.card-body {
+	border-style: solid;
+	border-color: $color-silver;
+	border-width: 2px;
+	border-top: 0px;
+	h5 {
+		text-transform: capitalize;
+	} 
+}*/
 /*****************************************
 Footer
 *****************************************/

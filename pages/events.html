@@ -1,156 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>Stefan's Portfolio</title>
-		<meta charset="utf-8">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../styles/main.css">
-		<link rel="stylesheet" href="../styles/events.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-		<script src="//code.jquery.com/jquery.min.js"></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-	</head>
-	<body>
-		<nav class="navbar navbar-default" id="nav-placeholder" style="z-index : 1;">
-		  <div class="container container-fluid">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <div>
-		      	<a href=""><img style="" class="mobile-icons visible-xs" src="../assets/images/search.svg" alt="Search"></a>
-				   	<a href=""><img class="mobile-icons visible-xs" src="../assets/images/cart-mob.svg" alt="Checkout"></a>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/main-styles.css">
+
+    <title>Street Foods | Events</title>
+  </head>
+  <body>
+
+  <nav class="navbar navbar-dark">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html"><img class="navbar-brand mx-auto" src="../assets/images/logo.svg"></a>
+
+    <div>
+      <a href="#"><img class="svg-icon navbar-search" src="../assets/images/search-mob.svg"></a>
+      <a href="#"><img class="svg-icon navbar-cart" src="../assets/images/cart-mob.svg"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menus.html">Our Menus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-events-page">
+      <h1 class="mx-auto main-title trash-hands">The up and coming events.</h1>
+      
+      <!-- CARDS -->
+      <div class="main-events" style="background-image: url(../assets/images/patternGray.jpg)" >
+        
+				<div class="event-card">
+			  	<div class="date card-title">
+			  		<p>NOV 22
+			  		2018</p>
+			  	</div>
+			  	<div>
+			    	<h5 class="card-title">Kendal Whittier Food Truck Festival</h5>
+			    	<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+			    	<a href="#" class="btn">Map it</a>
+			    	<a href="#" class="btn">Share it</a>
+			    </div>
+				</div>
+
+				<div class="event-card">
+				  <div class=" date card-title">
+				  	<p>NOV 22
+				 		2018</p>
 				  </div>
-		      <a href="../index.html"><img class="main-logo" src="../assets/images/logo.svg"></a>
-		      
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="">
-		      <ul class="nav navbar-nav navbar-right">
-	          <li><a href="../index.html">Home</a></li>
-	          <li><a href="pages/events.html">Order</a></li>
-	          <li><a href="pages/events.html">Menus</a></li>
-	          <li><a href="pages/events.html">Events</a></li>
-	          <li><a href="pages/events.html">Contact</a></li>
-		        <div class="navbar-header"> <!-- Start Nav Icons -->
-		        	<div class="icon"> <!-- Start Icons -->
-				      	<li><a href=""><img class="search-icon icons hidden-xs" src="../assets/images/search.svg" alt="Search"></a></li>
-				      	<li><a href=""><img class="cart-icon icons hidden-xs" src="../assets/images/cart.svg" alt="Checkout"></a></li>
-				      </div> <!-- /icons -->
-				    </div> <!-- /Nav Icons -->
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-
-		<div>
-			<h1 class="map">MAP</h1>
-		</div>
-
-		<div class="event-list container">
-			<div class="main-heading">
-				<h1 class="trash-hands">THE UP AND COMING EVENTS</h1>
-			</div>
-
-			<!-- Post #1 -->
-			<div class="panel container">
-				<div class="row">
-					<div class="col-xs-2 event-date">
-						<h2>NOV 22</h2>
-						<p>2017</p>
-					</div>
-
-					<div class="col-xs-8">
-						<h2 class="title">Kendal Whittier Food Truck Festival</h2>
-					</div>
+				  <div>
+				    <h5 class="card-title">Street Foods Fest</h5>
+				    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+				    <a href="#" class="btn">Map it</a>
+				    <a href="#" class="btn">Share it</a>
+				  </div>
 				</div>
 
-				<div class="row">
-					<div class="col-xs-12">
-						<p>11:00 AM - 2:00 PM</p>
-						<p>618 S. Wheeling Ave, Los Angeles, CA</p>
-					</div>
+				<div class="twitter-card event-card">
+				    <h5 class="card-title">Twitter Feed</h5>
+				    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 				</div>
+			</div><!-- / MAIN CONTENT CARDS -->
 
-				<div class="panel-body share-buttons">
-					<a href="#"><button class="map-it social">MAP IT</button></a>
-					<a href="#"><button class="share-it social">SHARE IT</button></a>
-				</div>
-			</div> <!-- /Panel Container - /Post #1 -->
+    <!-- FOOTER -->
+    <div id="footer" class="container-fluid">
 
-			<!-- Post #2 -->
-			<div class="panel container">
-				<div class="row">
-					<div class="col-xs-2 event-date">
-						<h2>NOV 24</h2>
-						<p>2017</p>
-					</div>
+      <div class="container"> <!-- Start Update Subscription & Social fields  -->
+        <h3 class="footer-title">Get Updates</h3>
+          <div id="signup_footer" class="d-flex align-items-start">
+            <div class="form-group">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_e3428dd6b8fda73bc5ba8b6e6_198881a019" tabindex="-1" value="">
+              </div>
+              <input style="width: 38vw; border-radius: 0; height: 48px;" id="mce-EMAIL" class="footer__email-input form-control form-control--muted" name="EMAIL" type="email" aria-describedby="footerEmail" placeholder="EMAIL@EXAMPLE.COM">
+            </div>
+            <input style="border-radius: 0; height: 48px;" class="btn btn-brand" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
 
-					<div class="col-xs-8">
-						<h2 class="title">Street Foods Fest</h2>
-					</div>
-				</div>
 
-				<div class="row">
-					<div class="col-xs-12 address">
-						<p>11:00 AM - 3:00 PM</p>
-						<p>244 N. Centry Ave, Los Angeles, CA</p>
-					</div>
-				</div>
+          <div class="container mx-auto"> <!---- SOCIAL LINKS ---->
+            <div class="row justify-content-around"> 
+              <div class="fb-logo">
+                <a href="https://facebook.com"><img class="mx-auto" src="../assets/images/facebook.svg"></a>
+              </div>
+              <div class="twitter-logo">
+                <a href="https://twitter.com"><img class="mx-auto " src="../assets/images/twitter.svg"></a>
+              </div>  
+            </div>
+          </div> <!-- /SOCIAL LINKS -->  
+        </div> 
+      </div> <!-- /Update Subscription & Social fields-->
 
-				<div class="panel-body share-buttons">
-					<a href="#"><button class="map-it social">MAP IT</button></a>
-					<a href="#"><button class="share-it social">SHARE IT</button></a>
-				</div>
-			</div> <!-- /Panel Container - /Post #2 -->
+      <div class="container contact-info">
+        <h3 class="footer-title">Contact Us</h3>
+        <p>Phone: (123) 456-7890</p>
+        <p>E-mail: customerservice@streetfoods.com</p>
+      </div>
 
-			<!-- Begin Feed -->
-			<div class="panel panel-default">
-				<div class="panel-heading "><h2 class="feed-title">Twitter Feed</h2></div>
-				<div class="container">
-				<div class="panel-body">
-					<h6>Street Foods</h6> 
-					<p>@streetfoods</p> 
-					<p>20 Nov</p>
-					<p>The Carabean and The United Kingdom are across from Zeigar's on Lewis Until 2pm today. Get it whilst the gettings good.</p>
-				</div>
-				<div class="panel-body">
-					<h6>Street Foods</h6>
-					<p>@streetfoods</p>
-					<p>19 Nov</p>
-					<p>This westher aint got nothin' on us! COme see us at Guthrie Green for #FoodTruckWednesdays! The whole fleet is here!</p>
-				</div>
-				<div class="panel-body">
-					<h6>Street Foods</h6>
-					<p>@streetfoods</p>
-					<p>19 Nov</p>
-					<p>#EatStreet was awesome! Thanks everyone who came out and made it that way! :)</p>
-				</div>
-				<div class="panel-body">
-					<h6>Street Foods</h6>
-					<p>@streetfoods</p>
-					<p>19 Nov</p>
-					<p>@lonewolfbanhmi enjoy, friends. Well-earned.</p>
-				</div>
-				<div class="container share-buttons"> <button class="follow social feed">Folllow</button> <button class="share-it social feed">View More</button></div>
-			</div>
-			<!-- /Feed -->	
+      <div class="container">
+        <div class="row justify-content-start">
+          <a class="col-6" href="../index.html">Home</a>
+          <a class="col-6" href="#">Help</a>
+          <a class="col-6" href="#">Order</a>
+          <a class="col-6" href="#">FAQ</a>
+          <a class="col-6" href="#">Menu</a>
+          <a class="col-6" href="#">About Us</a>
+          <a class="col-6" href="#">Events</a>
+          <a class="col-6" href="#">Contact</a>
+        </div> 
+      </div>   
+    </div>
 
-		</div> <!-- /Container -->
+    <!----/***************
+    SCRIPTS
+    ****************/---->
 
-		<footer>
-			<h4>some text</h4>
-		</footer>
+    <!-- My JavaScript -->
+    <script type="text/javascript" src="../js/menu.js"></script>
 
-	</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
-

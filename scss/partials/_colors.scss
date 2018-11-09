@@ -14,14 +14,14 @@
 	font-family: Trash-Hands;
 }*/
 
-$color-med: #ee145c; //hotpink
-$color-uk: #00abd4; //blue
-$color-south: #f36321; //orange
-$color-east: #8cc540; //green
-$color-car: #c53a94; //purple
-$color-nav: #404041; //charcoal-grey
-$color-silver: #d3d4d6; //silver
-$color-footer: #312f30; //purple-brown
+$color-med: #ee145c; /*hotpink*/
+$color-uk: #00abd4; /*blue*/
+$color-south: #f36321; /*orange*/
+$color-east: #8cc540; /*green*/
+$color-car: #c53a94; /*purple*/
+$color-nav: #404041; /*charcoal-grey*/
+$color-silver: #d3d4d6; /*silver*/
+$color-footer: #312f30; /*purple-brown*/
 
 $color-footer-heading: white;
 $color-facebook: #4267b2;
@@ -85,6 +85,37 @@ TEXT STYLES
 .the-car {
 	color: $color-car;
 }
+
+/*****************************************
+EVENT PAGE
+*****************************************/
+
+div.event-date {
+	background-color: $color-south;
+	/*color: white;*/
+}
+
+.card-title>p {
+	color: white;
+	background-color: $color-south;
+}
+
+h5.card-title {
+	color: #404041;
+	/*background-color: white;*/
+}
+
+.twitter-card {
+	h5{
+		color: white;
+		background-color: $color-twitter;
+	}
+}
+
+/*.mapit-btn {
+	background-color: $color-south;
+	color: white;
+}*/
 
 /*****************************************
 OTHER - UNSORTED

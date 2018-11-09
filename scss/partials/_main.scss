@@ -4,7 +4,7 @@ General
 
 .trash-hands {
 	font-family: TrashHand;
-	font-size: 4.5em;
+	font-size: 4em;
 }
 
 .main-menus {
@@ -30,6 +30,16 @@ General
 
 .btn {
 	border-radius: 0;
+}
+
+.card-body {
+	border-style: solid;
+	border-color: $color-silver;
+	border-width: 2px;
+	border-top: 0px;
+	h5 {
+		text-transform: capitalize;
+	} 
 }
 
 /*****************************************
@@ -113,16 +123,6 @@ MENU STYLES -- MENU PAGE --
 	}
 }
 
-.card-body {
-	border-style: solid;
-	border-color: $color-silver;
-	border-width: 2px;
-	border-top: 0px;
-	h5 {
-		text-transform: capitalize;
-	} 
-}
-
 .price {
 	font-size: 2.75em;
 }
@@ -148,6 +148,65 @@ input {
 	background-color: $color-silver;
 	padding: 10px 0px 10px 10px;
 }
+
+/*****************************************
+EVENT STYLES
+*****************************************/
+
+.main-events-page {
+	.card {
+		/*margin: 25px 10px;*/
+		color: black;
+	}
+	.card-header {
+		color: white;
+		border-radius: 0px
+	}
+}
+
+.main-events {
+	padding: 10px 15px;
+}
+
+.event-card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    margin-top: 15px;
+
+/* CARD BORDER STYLES */
+    border-style: solid;
+    border-width: 5px;
+    border-top: 2px;
+    &:nth-child(1){
+    	margin-top: -50px;
+    }
+}
+
+.event-date {
+	/*margin: -1.25rem -1.25rem 0px -1.25rem;*/
+	padding: 5px;
+}
+
+/*.card-body {
+	border-style: solid;
+	border-color: $color-silver;
+	border-width: 2px;
+	border-top: 0px;
+	h5 {
+		text-transform: capitalize;
+	} 
+}*/
 
 /*****************************************
 Footer
